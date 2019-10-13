@@ -3,44 +3,44 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/hello/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2019-10-13T22:08:08+00:00</lastmod>
+    <lastmod>2019-10-13T22:09:28+08:00</lastmod>
     <priority>0</priority>
   </url>
   
