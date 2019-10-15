@@ -2,30 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Vina Blog</title>
-    <link>http://localhost:1313/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Vina Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 14 Oct 2019 10:27:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2019 21:54:06 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Hiyayyaya</title>
+      <link>/post/hiyayyaya/</link>
+      <pubDate>Mon, 14 Oct 2019 21:54:06 +0000</pubDate>
+      
+      <guid>/post/hiyayyaya/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>HHHH</title>
-      <link>http://localhost:1313/post/hhhh/</link>
+      <link>/post/hhhh/</link>
       <pubDate>Mon, 14 Oct 2019 10:27:06 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/hhhh/</guid>
+      <guid>/post/hhhh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello</title>
-      <link>http://localhost:1313/post/hello/</link>
+      <link>/post/hello/</link>
       <pubDate>Sun, 13 Oct 2019 22:08:08 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/hello/</guid>
+      <guid>/post/hello/</guid>
       <description>dfdsfsdfsdf</description>
     </item>
     

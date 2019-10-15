@@ -28,9 +28,9 @@
 <meta name="generator" content="Hugo 0.55.6 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/categories/" />
-<link href="http://localhost:1313/categories/index.xml" rel="alternate" type="application/rss+xml" title="Vina Blog" />
-<link href="http://localhost:1313/categories/index.xml" rel="feed" type="application/rss+xml" title="Vina Blog" />
+<link rel="canonical" href="/categories/" />
+<link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Vina Blog" />
+<link href="/categories/index.xml" rel="feed" type="application/rss+xml" title="Vina Blog" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,7 +38,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link rel="stylesheet" href="http://localhost:1313/css/search.css" />
+<link rel="stylesheet" href="/css/search.css" />
 
 
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 <meta property="og:title" content="Categories" />
 <meta property="og:description" content="Vina" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/categories/" />
+<meta property="og:url" content="/categories/" />
 
 <meta property="og:updated_time" content="2019-10-13T22:08:08&#43;00:00"/>
 
@@ -137,11 +137,11 @@
         displayKey: 'name',
         templates: {
             suggestion: function (suggestion) {
-                console.log(suggestion, '<a href="http://' + document.domain + suggestion.uri + '">', "http:\/\/localhost:1313");
-                setTimeout(() => {
-                    console.log(document.getElementsByClassName('aa-dropdown-menu')[0].innerHTML)
-                }, 3000);
-                return '<span class="search-item">' + '<a href="http:\/\/localhost:1313' + suggestion.uri + '">' +
+                var reg = /([A-Z]+)/ig
+                var title = suggestion.uri.replace(reg, function (m) {
+                    return m.toLowerCase()
+                })
+                return '<span class="search-item">' + '<a href="\/' + title + '">' +
                     suggestion._highlightResult.title.value + '</a></span>';
             }
         }
@@ -174,7 +174,7 @@
 
     <footer id="footer" class="footer">
       <div class="social-links">
-  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">

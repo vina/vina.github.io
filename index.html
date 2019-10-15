@@ -28,9 +28,9 @@
 <meta name="generator" content="Hugo 0.55.6 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Vina Blog" />
-<link href="http://localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Vina Blog" />
+<link rel="canonical" href="/" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Vina Blog" />
+<link href="/index.xml" rel="feed" type="application/rss+xml" title="Vina Blog" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,7 +38,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
-<link rel="stylesheet" href="http://localhost:1313/css/search.css" />
+<link rel="stylesheet" href="/css/search.css" />
 
 
 <link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
@@ -48,9 +48,9 @@
 <meta property="og:title" content="Vina Blog" />
 <meta property="og:description" content="Vina" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:url" content="/" />
 
-<meta property="og:updated_time" content="2019-10-14T10:27:06&#43;00:00"/>
+<meta property="og:updated_time" content="2019-10-14T21:54:06&#43;00:00"/>
 
 <meta itemprop="name" content="Vina Blog">
 <meta itemprop="description" content="Vina">
@@ -137,11 +137,11 @@
         displayKey: 'name',
         templates: {
             suggestion: function (suggestion) {
-                console.log(suggestion, '<a href="http://' + document.domain + suggestion.uri + '">', "http:\/\/localhost:1313");
-                setTimeout(() => {
-                    console.log(document.getElementsByClassName('aa-dropdown-menu')[0].innerHTML)
-                }, 3000);
-                return '<span class="search-item">' + '<a href="http:\/\/localhost:1313' + suggestion.uri + '">' +
+                var reg = /([A-Z]+)/ig
+                var title = suggestion.uri.replace(reg, function (m) {
+                    return m.toLowerCase()
+                })
+                return '<span class="search-item">' + '<a href="\/' + title + '">' +
                     suggestion._highlightResult.title.value + '</a></span>';
             }
         }
@@ -156,6 +156,27 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/hiyayyaya/">Hiyayyaya</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2019-10-14 </span>
+      
+        <span class="more-meta"> 约 0 字 </span>
+        <span class="more-meta"> 预计阅读 0 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      
+    </div>
+    <div class="read-more">
+      <a href="/post/hiyayyaya/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/hhhh/">HHHH</a></h1>
@@ -214,7 +235,7 @@
 
     <footer id="footer" class="footer">
       <div class="social-links">
-  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
